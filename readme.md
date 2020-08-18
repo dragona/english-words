@@ -1,0 +1,543 @@
+# Unique English words
+The dictionary file contains a list of unique words that were built from the dataset sources:
+
+- http://www.cs.cornell.edu/home/llee/data/simdata.tar.gz
+- http://wordlist.aspell.net/
+
+Here is another dataset that could be used to add in more to the corpora https://www.english-corpora.org/corpora.asp
+
+Built using http://www.cs.cornell.edu/home/llee/data/simdata.tar.gz
+
+```
+File name: ./dataset/test1 - Unique words cumulated: 2758 - String in the file: 13544 
+File name: ./dataset/train - Unique words cumulated: 5076 - String in the file: 440421 
+File name: ./dataset/test4 - Unique words cumulated: 5076 - String in the file: 13552 
+File name: ./dataset/test3 - Unique words cumulated: 5076 - String in the file: 13572 
+File name: ./dataset/test2 - Unique words cumulated: 5076 - String in the file: 13520 
+File name: ./dataset/test5 - Unique words cumulated: 5076 - String in the file: 13472 
+```
+
+Built using the scowl-2019.10.06 dataset, plus the package content from  http://wordlist.aspell.net/
+```
+  1 / 520 #  scowl-2019.10.06/mk-list                                               # Unique words cumulated: 51       - String in the file: 477
+  2 / 520 #  scowl-2019.10.06/Makefile                                              # Unique words cumulated: 104      - String in the file: 520
+  3 / 520 #  scowl-2019.10.06/README.in                                             # Unique words cumulated: 625      - String in the file: 2508
+  4 / 520 #  scowl-2019.10.06/README                                                # Unique words cumulated: 1159     - String in the file: 4623
+  5 / 520 #  scowl-2019.10.06/VERSION                                               # Unique words cumulated: 1159     - String in the file: 1
+  6 / 520 #  scowl-2019.10.06/l.tar                                                 # Unique words cumulated: 1162     - String in the file: 338
+  7 / 520 #  scowl-2019.10.06/Copyright                                             # Unique words cumulated: 1162     - String in the file: 1817
+  8 / 520 #  scowl-2019.10.06/l.dir                                                 # Unique words cumulated: 1165     - String in the file: 403
+  9 / 520 #  scowl-2019.10.06/misc/offensive.2                                      # Unique words cumulated: 1173     - String in the file: 12
+ 10 / 520 #  scowl-2019.10.06/misc/profane.1                                        # Unique words cumulated: 1215     - String in the file: 60
+ 11 / 520 #  scowl-2019.10.06/misc/README                                           # Unique words cumulated: 1230     - String in the file: 108
+ 12 / 520 #  scowl-2019.10.06/misc/offensive.1                                      # Unique words cumulated: 1234     - String in the file: 5
+ 13 / 520 #  scowl-2019.10.06/misc/profane.3                                        # Unique words cumulated: 1256     - String in the file: 27
+ 14 / 520 #  scowl-2019.10.06/r/README                                              # Unique words cumulated: 1281     - String in the file: 165
+ 15 / 520 #  scowl-2019.10.06/r/enable/readme.1st                                   # Unique words cumulated: 1295     - String in the file: 165
+ 16 / 520 #  scowl-2019.10.06/r/enable/checksum.doc                                 # Unique words cumulated: 1400     - String in the file: 463
+ 17 / 520 #  scowl-2019.10.06/r/enable/sigwd2k.doc                                  # Unique words cumulated: 1471     - String in the file: 509
+ 18 / 520 #  scowl-2019.10.06/r/enable/readme                                       # Unique words cumulated: 1679     - String in the file: 1567
+ 19 / 520 #  scowl-2019.10.06/r/enable/enable.doc                                   # Unique words cumulated: 1939     - String in the file: 1354
+ 20 / 520 #  scowl-2019.10.06/r/enable/sigword.doc                                  # Unique words cumulated: 1972     - String in the file: 314
+ 21 / 520 #  scowl-2019.10.06/r/enable/mw10add.doc                                  # Unique words cumulated: 2011     - String in the file: 583
+ 22 / 520 #  scowl-2019.10.06/r/infl/README                                         # Unique words cumulated: 2136     - String in the file: 2459
+ 23 / 520 #  scowl-2019.10.06/r/ukacd/readme.txt                                    # Unique words cumulated: 2216     - String in the file: 636
+ 24 / 520 #  scowl-2019.10.06/r/enable-sup/2dicts.doc                               # Unique words cumulated: 2330     - String in the file: 1183
+ 25 / 520 #  scowl-2019.10.06/r/enable-sup/makelist.doc                             # Unique words cumulated: 2402     - String in the file: 1315
+ 26 / 520 #  scowl-2019.10.06/r/enable-sup/ospdadd.doc                              # Unique words cumulated: 2415     - String in the file: 235
+ 27 / 520 #  scowl-2019.10.06/r/enable-sup/plurals.doc                              # Unique words cumulated: 3268     - String in the file: 6752
+ 28 / 520 #  scowl-2019.10.06/r/enable-sup/twl_enab.doc                             # Unique words cumulated: 3335     - String in the file: 1229
+ 29 / 520 #  scowl-2019.10.06/r/enable-sup/doom_ena.doc                             # Unique words cumulated: 3868     - String in the file: 2669
+ 30 / 520 #  scowl-2019.10.06/r/enable-sup/readme                                   # Unique words cumulated: 3897     - String in the file: 186
+ 31 / 520 #  scowl-2019.10.06/r/enable-sup/expurgat.doc                             # Unique words cumulated: 3953     - String in the file: 825
+ 32 / 520 #  scowl-2019.10.06/r/enable-sup/cosspd.doc                               # Unique words cumulated: 4032     - String in the file: 1990
+ 33 / 520 #  scowl-2019.10.06/r/enable-sup/able.doc                                 # Unique words cumulated: 4099     - String in the file: 538
+ 34 / 520 #  scowl-2019.10.06/r/enable-sup/auxfile.doc                              # Unique words cumulated: 4154     - String in the file: 1273
+ 35 / 520 #  scowl-2019.10.06/r/enable-sup/mw10add.doc                              # Unique words cumulated: 4155     - String in the file: 614
+ 36 / 520 #  scowl-2019.10.06/r/uk-freq-class/notes.txt                             # Unique words cumulated: 4185     - String in the file: 330
+ 37 / 520 #  scowl-2019.10.06/r/yawl/LICENSE                                        # Unique words cumulated: 4192     - String in the file: 145
+ 38 / 520 #  scowl-2019.10.06/r/yawl/README                                         # Unique words cumulated: 4301     - String in the file: 865
+ 39 / 520 #  scowl-2019.10.06/r/special/chinese-names                               # Unique words cumulated: 4335     - String in the file: 34
+ 40 / 520 #  scowl-2019.10.06/r/special/roman-numerals                              # Unique words cumulated: 4397     - String in the file: 63
+ 41 / 520 #  scowl-2019.10.06/r/special/frequent                                    # Unique words cumulated: 4844     - String in the file: 1173
+ 42 / 520 #  scowl-2019.10.06/r/special/extra.60                                    # Unique words cumulated: 4958     - String in the file: 128
+ 43 / 520 #  scowl-2019.10.06/r/special/contractions                                # Unique words cumulated: 4958     - String in the file: 11
+ 44 / 520 #  scowl-2019.10.06/r/special/australian.35                               # Unique words cumulated: 5250     - String in the file: 424
+ 45 / 520 #  scowl-2019.10.06/r/special/signature.70                                # Unique words cumulated: 5275     - String in the file: 28
+ 46 / 520 #  scowl-2019.10.06/r/special/letters                                     # Unique words cumulated: 5362     - String in the file: 100
+ 47 / 520 #  scowl-2019.10.06/r/special/prefixes                                    # Unique words cumulated: 5362     - String in the file: 1
+ 48 / 520 #  scowl-2019.10.06/r/special/marco.80                                    # Unique words cumulated: 7730     - String in the file: 2520
+ 49 / 520 #  scowl-2019.10.06/r/special/never-abbreviations                         # Unique words cumulated: 7731     - String in the file: 3
+ 50 / 520 #  scowl-2019.10.06/r/special/marco-alan.70                               # Unique words cumulated: 7745     - String in the file: 77
+ 51 / 520 #  scowl-2019.10.06/r/special/sort                                        # Unique words cumulated: 7746     - String in the file: 60
+ 52 / 520 #  scowl-2019.10.06/r/special/.add-possessives.pl                         # Unique words cumulated: 7747     - String in the file: 32
+ 53 / 520 #  scowl-2019.10.06/r/special/chinese-names.also                          # Unique words cumulated: 7754     - String in the file: 8
+ 54 / 520 #  scowl-2019.10.06/r/special/australian-towns-part                       # Unique words cumulated: 7756     - String in the file: 2
+ 55 / 520 #  scowl-2019.10.06/r/special/proper-names                                # Unique words cumulated: 7850     - String in the file: 106
+ 56 / 520 #  scowl-2019.10.06/r/special/variant_3                                   # Unique words cumulated: 7850     - String in the file: 0
+ 57 / 520 #  scowl-2019.10.06/r/special/variant_2                                   # Unique words cumulated: 7850     - String in the file: 0
+ 58 / 520 #  scowl-2019.10.06/r/special/not-possessive                              # Unique words cumulated: 7866     - String in the file: 50
+ 59 / 520 #  scowl-2019.10.06/r/special/not-upper                                   # Unique words cumulated: 7869     - String in the file: 9
+ 60 / 520 #  scowl-2019.10.06/r/special/abbreviations-also                          # Unique words cumulated: 7876     - String in the file: 7
+ 61 / 520 #  scowl-2019.10.06/r/special/exclude.70                                  # Unique words cumulated: 7877     - String in the file: 2
+ 62 / 520 #  scowl-2019.10.06/r/special/cs.70                                       # Unique words cumulated: 7893     - String in the file: 16
+ 63 / 520 #  scowl-2019.10.06/r/special/hacker-exclude                              # Unique words cumulated: 7997     - String in the file: 104
+ 64 / 520 #  scowl-2019.10.06/r/special/names.from_alan_beale                       # Unique words cumulated: 15908    - String in the file: 8290
+ 65 / 520 #  scowl-2019.10.06/r/special/urban-areas                                 # Unique words cumulated: 16186    - String in the file: 723
+ 66 / 520 #  scowl-2019.10.06/r/special/name-endings.60                             # Unique words cumulated: 16186    - String in the file: 1
+ 67 / 520 #  scowl-2019.10.06/r/special/high-freq.60                                # Unique words cumulated: 16594    - String in the file: 461
+ 68 / 520 #  scowl-2019.10.06/r/special/README                                      # Unique words cumulated: 16625    - String in the file: 633
+ 69 / 520 #  scowl-2019.10.06/r/special/high-freq.70                                # Unique words cumulated: 16627    - String in the file: 14
+ 70 / 520 #  scowl-2019.10.06/r/special/NOTES                                       # Unique words cumulated: 16643    - String in the file: 391
+ 71 / 520 #  scowl-2019.10.06/r/special/cs.60                                       # Unique words cumulated: 16657    - String in the file: 15
+ 72 / 520 #  scowl-2019.10.06/r/special/exclude.60                                  # Unique words cumulated: 16663    - String in the file: 10
+ 73 / 520 #  scowl-2019.10.06/r/special/unix-terms                                  # Unique words cumulated: 16672    - String in the file: 11
+ 74 / 520 #  scowl-2019.10.06/r/special/2800-ptr                                    # Unique words cumulated: 16697    - String in the file: 29
+ 75 / 520 #  scowl-2019.10.06/r/special/never-variant                               # Unique words cumulated: 16730    - String in the file: 39
+ 76 / 520 #  scowl-2019.10.06/r/special/mozilla-alan.60                             # Unique words cumulated: 16762    - String in the file: 39
+ 77 / 520 #  scowl-2019.10.06/r/special/names-part                                  # Unique words cumulated: 16764    - String in the file: 8
+ 78 / 520 #  scowl-2019.10.06/r/special/signature.50                                # Unique words cumulated: 16883    - String in the file: 162
+ 79 / 520 #  scowl-2019.10.06/r/special/marco-alan.60                               # Unique words cumulated: 17086    - String in the file: 312
+ 80 / 520 #  scowl-2019.10.06/r/special/phrase-parts                                # Unique words cumulated: 17090    - String in the file: 4
+ 81 / 520 #  scowl-2019.10.06/r/special/signature.35                                # Unique words cumulated: 17102    - String in the file: 21
+ 82 / 520 #  scowl-2019.10.06/r/special/name-endings                                # Unique words cumulated: 17102    - String in the file: 5
+ 83 / 520 #  scowl-2019.10.06/r/special/abbreviations                               # Unique words cumulated: 17160    - String in the file: 68
+ 84 / 520 #  scowl-2019.10.06/r/special/signature.60                                # Unique words cumulated: 17181    - String in the file: 47
+ 85 / 520 #  scowl-2019.10.06/r/special/variant_1                                   # Unique words cumulated: 17191    - String in the file: 10
+ 86 / 520 #  scowl-2019.10.06/r/special/australian-towns                            # Unique words cumulated: 17282    - String in the file: 139
+ 87 / 520 #  scowl-2019.10.06/r/special/exclude.80                                  # Unique words cumulated: 17282    - String in the file: 4
+ 88 / 520 #  scowl-2019.10.06/r/special/add-possessive                              # Unique words cumulated: 17297    - String in the file: 37
+ 89 / 520 #  scowl-2019.10.06/r/special/extra.70                                    # Unique words cumulated: 17298    - String in the file: 1
+ 90 / 520 #  scowl-2019.10.06/r/varcon/README                                       # Unique words cumulated: 17445    - String in the file: 3040
+ 91 / 520 #  scowl-2019.10.06/r/pos/README                                          # Unique words cumulated: 17466    - String in the file: 589
+ 92 / 520 #  scowl-2019.10.06/r/pos/README-orig                                     # Unique words cumulated: 17536    - String in the file: 654
+ 93 / 520 #  scowl-2019.10.06/r/alt12dicts/README                                   # Unique words cumulated: 17593    - String in the file: 1452
+ 94 / 520 #  scowl-2019.10.06/r/alt12dicts/README-orig                              # Unique words cumulated: 18066    - String in the file: 12851
+ 95 / 520 #  scowl-2019.10.06/r/census/nam_meth.txt                                 # Unique words cumulated: 18228    - String in the file: 1700
+ 96 / 520 #  scowl-2019.10.06/r/jargon-wl/README                                    # Unique words cumulated: 18232    - String in the file: 214
+ 97 / 520 #  scowl-2019.10.06/r/mwords/README                                       # Unique words cumulated: 18257    - String in the file: 773
+ 98 / 520 #  scowl-2019.10.06/final/english-words.20                                # Unique words cumulated: 24273    - String in the file: 7953
+ 99 / 520 #  scowl-2019.10.06/final/british-words.80                                # Unique words cumulated: 28681    - String in the file: 4588
+100 / 520 #  scowl-2019.10.06/final/canadian-words.10                               # Unique words cumulated: 28703    - String in the file: 41
+101 / 520 #  scowl-2019.10.06/final/english-abbreviations.20                        # Unique words cumulated: 28705    - String in the file: 2
+102 / 520 #  scowl-2019.10.06/final/canadian_variant_2-words.10                     # Unique words cumulated: 28711    - String in the file: 6
+103 / 520 #  scowl-2019.10.06/final/british_variant_1-words.20                      # Unique words cumulated: 28743    - String in the file: 44
+104 / 520 #  scowl-2019.10.06/final/australian-words.40                             # Unique words cumulated: 28925    - String in the file: 224
+105 / 520 #  scowl-2019.10.06/final/variant_1-words.80                              # Unique words cumulated: 29351    - String in the file: 503
+106 / 520 #  scowl-2019.10.06/final/australian_variant_1-contractions.50            # Unique words cumulated: 29351    - String in the file: 2
+107 / 520 #  scowl-2019.10.06/final/variant_2-abbreviations.70                      # Unique words cumulated: 29353    - String in the file: 3
+108 / 520 #  scowl-2019.10.06/final/variant_1-proper-names.80                       # Unique words cumulated: 29356    - String in the file: 6
+109 / 520 #  scowl-2019.10.06/final/canadian-abbreviations.95                       # Unique words cumulated: 29357    - String in the file: 2
+110 / 520 #  scowl-2019.10.06/final/canadian_variant_1-proper-names.95              # Unique words cumulated: 29358    - String in the file: 2
+111 / 520 #  scowl-2019.10.06/final/variant_1-words.20                              # Unique words cumulated: 29399    - String in the file: 73
+112 / 520 #  scowl-2019.10.06/final/australian-upper.50                             # Unique words cumulated: 29412    - String in the file: 37
+113 / 520 #  scowl-2019.10.06/final/british_variant_1-words.80                      # Unique words cumulated: 29442    - String in the file: 105
+114 / 520 #  scowl-2019.10.06/final/english-abbreviations.80                        # Unique words cumulated: 29677    - String in the file: 326
+115 / 520 #  scowl-2019.10.06/final/australian_variant_1-contractions.35            # Unique words cumulated: 29677    - String in the file: 1
+116 / 520 #  scowl-2019.10.06/final/english-proper-names.40                         # Unique words cumulated: 29679    - String in the file: 3
+117 / 520 #  scowl-2019.10.06/final/australian-abbreviations.80                     # Unique words cumulated: 29680    - String in the file: 1
+118 / 520 #  scowl-2019.10.06/final/british-words.20                                # Unique words cumulated: 29829    - String in the file: 196
+119 / 520 #  scowl-2019.10.06/final/australian-upper.95                             # Unique words cumulated: 29830    - String in the file: 27
+120 / 520 #  scowl-2019.10.06/final/canadian_variant_2-contractions.70              # Unique words cumulated: 29830    - String in the file: 1
+121 / 520 #  scowl-2019.10.06/final/english-words.80                                # Unique words cumulated: 155609   - String in the file: 139223
+122 / 520 #  scowl-2019.10.06/final/english-abbreviations.10                        # Unique words cumulated: 155610   - String in the file: 3
+123 / 520 #  scowl-2019.10.06/final/english-words.10                                # Unique words cumulated: 157342   - String in the file: 4374
+124 / 520 #  scowl-2019.10.06/final/canadian-words.20                               # Unique words cumulated: 157423   - String in the file: 185
+125 / 520 #  scowl-2019.10.06/final/british_variant_2-abbreviations.80              # Unique words cumulated: 157424   - String in the file: 1
+126 / 520 #  scowl-2019.10.06/final/australian_variant_1-contractions.60            # Unique words cumulated: 157424   - String in the file: 1
+127 / 520 #  scowl-2019.10.06/final/canadian_variant_2-words.20                     # Unique words cumulated: 157447   - String in the file: 30
+128 / 520 #  scowl-2019.10.06/final/australian-words.70                             # Unique words cumulated: 158746   - String in the file: 1317
+129 / 520 #  scowl-2019.10.06/final/british_variant_1-words.10                      # Unique words cumulated: 158754   - String in the file: 15
+130 / 520 #  scowl-2019.10.06/final/australian_variant_2-words.55                   # Unique words cumulated: 158853   - String in the file: 121
+131 / 520 #  scowl-2019.10.06/final/variant_1-words.10                              # Unique words cumulated: 158859   - String in the file: 22
+132 / 520 #  scowl-2019.10.06/final/australian-upper.60                             # Unique words cumulated: 158860   - String in the file: 1
+133 / 520 #  scowl-2019.10.06/final/canadian_variant_2-words.80                     # Unique words cumulated: 159382   - String in the file: 631
+134 / 520 #  scowl-2019.10.06/final/english-proper-names.70                         # Unique words cumulated: 160119   - String in the file: 1530
+135 / 520 #  scowl-2019.10.06/final/canadian-words.80                               # Unique words cumulated: 163309   - String in the file: 4583
+136 / 520 #  scowl-2019.10.06/final/british-words.10                                # Unique words cumulated: 163325   - String in the file: 47
+137 / 520 #  scowl-2019.10.06/final/australian_variant_2-upper.80                   # Unique words cumulated: 163384   - String in the file: 65
+138 / 520 #  scowl-2019.10.06/final/australian_variant_2-abbreviations.95           # Unique words cumulated: 163385   - String in the file: 2
+139 / 520 #  scowl-2019.10.06/final/british_variant_2-words.40                      # Unique words cumulated: 163472   - String in the file: 121
+140 / 520 #  scowl-2019.10.06/final/australian_variant_1-proper-names.80            # Unique words cumulated: 163472   - String in the file: 6
+141 / 520 #  scowl-2019.10.06/final/canadian_variant_1-words.70                     # Unique words cumulated: 163546   - String in the file: 88
+142 / 520 #  scowl-2019.10.06/final/variant_1-contractions.50                       # Unique words cumulated: 163546   - String in the file: 2
+143 / 520 #  scowl-2019.10.06/final/variant_2-upper.50                              # Unique words cumulated: 163576   - String in the file: 113
+144 / 520 #  scowl-2019.10.06/final/british_z-words.80                              # Unique words cumulated: 163576   - String in the file: 4583
+145 / 520 #  scowl-2019.10.06/final/australian_variant_1-upper.70                   # Unique words cumulated: 163583   - String in the file: 7
+146 / 520 #  scowl-2019.10.06/final/british_variant_1-contractions.60               # Unique words cumulated: 163583   - String in the file: 1
+147 / 520 #  scowl-2019.10.06/final/british_variant_2-upper.35                      # Unique words cumulated: 163584   - String in the file: 1
+148 / 520 #  scowl-2019.10.06/final/british-abbreviations.55                        # Unique words cumulated: 163584   - String in the file: 1
+149 / 520 #  scowl-2019.10.06/final/variant_2-upper.95                              # Unique words cumulated: 163587   - String in the file: 38
+150 / 520 #  scowl-2019.10.06/final/american-upper.60                               # Unique words cumulated: 163588   - String in the file: 1
+151 / 520 #  scowl-2019.10.06/final/american-proper-names.80                        # Unique words cumulated: 163734   - String in the file: 268
+152 / 520 #  scowl-2019.10.06/final/american-words.70                               # Unique words cumulated: 164978   - String in the file: 1318
+153 / 520 #  scowl-2019.10.06/final/variant_1-contractions.35                       # Unique words cumulated: 164978   - String in the file: 1
+154 / 520 #  scowl-2019.10.06/final/variant_2-upper.35                              # Unique words cumulated: 164978   - String in the file: 1
+155 / 520 #  scowl-2019.10.06/final/australian_variant_1-words.60                   # Unique words cumulated: 165108   - String in the file: 192
+156 / 520 #  scowl-2019.10.06/final/british_variant_2-upper.95                      # Unique words cumulated: 165108   - String in the file: 38
+157 / 520 #  scowl-2019.10.06/final/british_z-words.20                              # Unique words cumulated: 165108   - String in the file: 187
+158 / 520 #  scowl-2019.10.06/final/variant_2-words.40                              # Unique words cumulated: 165114   - String in the file: 157
+159 / 520 #  scowl-2019.10.06/final/variant_3-words.40                              # Unique words cumulated: 165135   - String in the file: 33
+160 / 520 #  scowl-2019.10.06/final/canadian_variant_1-upper.60                     # Unique words cumulated: 165171   - String in the file: 50
+161 / 520 #  scowl-2019.10.06/final/british_variant_2-upper.50                      # Unique words cumulated: 165171   - String in the file: 109
+162 / 520 #  scowl-2019.10.06/final/american-upper.95                               # Unique words cumulated: 165172   - String in the file: 27
+163 / 520 #  scowl-2019.10.06/final/australian_variant_1-words.35                   # Unique words cumulated: 165384   - String in the file: 319
+164 / 520 #  scowl-2019.10.06/final/british_variant_1-abbreviations.55              # Unique words cumulated: 165385   - String in the file: 1
+165 / 520 #  scowl-2019.10.06/final/british_variant_2-words.70                      # Unique words cumulated: 165683   - String in the file: 299
+166 / 520 #  scowl-2019.10.06/final/canadian_variant_1-words.40                     # Unique words cumulated: 165736   - String in the file: 94
+167 / 520 #  scowl-2019.10.06/final/variant_2-upper.60                              # Unique words cumulated: 165775   - String in the file: 53
+168 / 520 #  scowl-2019.10.06/final/variant_1-contractions.60                       # Unique words cumulated: 165775   - String in the file: 1
+169 / 520 #  scowl-2019.10.06/final/variant_1-abbreviations.95                      # Unique words cumulated: 165776   - String in the file: 1
+170 / 520 #  scowl-2019.10.06/final/american-upper.50                               # Unique words cumulated: 165783   - String in the file: 51
+171 / 520 #  scowl-2019.10.06/final/british-proper-names.95                         # Unique words cumulated: 166045   - String in the file: 520
+172 / 520 #  scowl-2019.10.06/final/british_variant_1-contractions.50               # Unique words cumulated: 166045   - String in the file: 2
+173 / 520 #  scowl-2019.10.06/final/australian_variant_1-upper.40                   # Unique words cumulated: 166047   - String in the file: 6
+174 / 520 #  scowl-2019.10.06/final/canadian_variant_1-upper.35                     # Unique words cumulated: 166048   - String in the file: 4
+175 / 520 #  scowl-2019.10.06/final/canadian_variant_1-upper.95                     # Unique words cumulated: 166048   - String in the file: 11
+176 / 520 #  scowl-2019.10.06/final/australian_variant_1-words.50                   # Unique words cumulated: 166263   - String in the file: 314
+177 / 520 #  scowl-2019.10.06/final/american-words.40                               # Unique words cumulated: 166420   - String in the file: 225
+178 / 520 #  scowl-2019.10.06/final/british_z-words.10                              # Unique words cumulated: 166420   - String in the file: 44
+179 / 520 #  scowl-2019.10.06/final/variant_2-words.70                              # Unique words cumulated: 166433   - String in the file: 338
+180 / 520 #  scowl-2019.10.06/final/variant_3-words.70                              # Unique words cumulated: 166472   - String in the file: 58
+181 / 520 #  scowl-2019.10.06/final/canadian_variant_1-upper.50                     # Unique words cumulated: 166476   - String in the file: 48
+182 / 520 #  scowl-2019.10.06/final/british_variant_1-contractions.35               # Unique words cumulated: 166476   - String in the file: 1
+183 / 520 #  scowl-2019.10.06/final/british_variant_2-upper.60                      # Unique words cumulated: 166476   - String in the file: 53
+184 / 520 #  scowl-2019.10.06/final/australian_variant_1-words.95                   # Unique words cumulated: 166766   - String in the file: 344
+185 / 520 #  scowl-2019.10.06/final/british_z-abbreviations.80                      # Unique words cumulated: 166766   - String in the file: 1
+186 / 520 #  scowl-2019.10.06/final/variant_2-words.55                              # Unique words cumulated: 166780   - String in the file: 125
+187 / 520 #  scowl-2019.10.06/final/special-roman-numerals.35                       # Unique words cumulated: 166780   - String in the file: 63
+188 / 520 #  scowl-2019.10.06/final/variant_3-words.55                              # Unique words cumulated: 166841   - String in the file: 68
+189 / 520 #  scowl-2019.10.06/final/british_z-words.35                              # Unique words cumulated: 167713   - String in the file: 1078
+190 / 520 #  scowl-2019.10.06/final/canadian_variant_1-contractions.50              # Unique words cumulated: 167713   - String in the file: 2
+191 / 520 #  scowl-2019.10.06/final/english-contractions.40                         # Unique words cumulated: 167713   - String in the file: 30
+192 / 520 #  scowl-2019.10.06/final/british_variant_2-upper.80                      # Unique words cumulated: 167713   - String in the file: 65
+193 / 520 #  scowl-2019.10.06/final/canadian_variant_2-abbreviations.70             # Unique words cumulated: 167713   - String in the file: 3
+194 / 520 #  scowl-2019.10.06/final/australian_variant_2-contractions.70            # Unique words cumulated: 167713   - String in the file: 1
+195 / 520 #  scowl-2019.10.06/final/american-proper-names.95                        # Unique words cumulated: 167974   - String in the file: 520
+196 / 520 #  scowl-2019.10.06/final/british_z-words.50                              # Unique words cumulated: 168604   - String in the file: 785
+197 / 520 #  scowl-2019.10.06/final/canadian_variant_1-contractions.35              # Unique words cumulated: 168604   - String in the file: 1
+198 / 520 #  scowl-2019.10.06/final/variant_2-upper.80                              # Unique words cumulated: 168604   - String in the file: 65
+199 / 520 #  scowl-2019.10.06/final/american-proper-names.50                        # Unique words cumulated: 168604   - String in the file: 332
+200 / 520 #  scowl-2019.10.06/final/british_z-words.95                              # Unique words cumulated: 171029   - String in the file: 2950
+201 / 520 #  scowl-2019.10.06/final/australian_variant_1-words.10                   # Unique words cumulated: 171029   - String in the file: 14
+202 / 520 #  scowl-2019.10.06/final/british_variant_2-words.55                      # Unique words cumulated: 171029   - String in the file: 106
+203 / 520 #  scowl-2019.10.06/final/australian_variant_1-proper-names.95            # Unique words cumulated: 171029   - String in the file: 14
+204 / 520 #  scowl-2019.10.06/final/british_z-abbreviations.95                      # Unique words cumulated: 171029   - String in the file: 2
+205 / 520 #  scowl-2019.10.06/final/english-contractions.70                         # Unique words cumulated: 171029   - String in the file: 13
+206 / 520 #  scowl-2019.10.06/final/australian_variant_1-words.80                   # Unique words cumulated: 171029   - String in the file: 412
+207 / 520 #  scowl-2019.10.06/final/canadian_variant_1-contractions.60              # Unique words cumulated: 171029   - String in the file: 1
+208 / 520 #  scowl-2019.10.06/final/american-words.55                               # Unique words cumulated: 171230   - String in the file: 227
+209 / 520 #  scowl-2019.10.06/final/canadian_variant_1-upper.80                     # Unique words cumulated: 171243   - String in the file: 13
+210 / 520 #  scowl-2019.10.06/final/australian_variant_1-abbreviations.55           # Unique words cumulated: 171243   - String in the file: 1
+211 / 520 #  scowl-2019.10.06/final/british_z-upper.70                              # Unique words cumulated: 171308   - String in the file: 68
+212 / 520 #  scowl-2019.10.06/final/british_z-words.60                              # Unique words cumulated: 171704   - String in the file: 544
+213 / 520 #  scowl-2019.10.06/final/british-abbreviations.70                        # Unique words cumulated: 171709   - String in the file: 6
+214 / 520 #  scowl-2019.10.06/final/british-proper-names.80                         # Unique words cumulated: 171860   - String in the file: 268
+215 / 520 #  scowl-2019.10.06/final/variant_3-abbreviations.40                      # Unique words cumulated: 171861   - String in the file: 1
+216 / 520 #  scowl-2019.10.06/final/canadian_variant_1-words.55                     # Unique words cumulated: 171913   - String in the file: 111
+217 / 520 #  scowl-2019.10.06/final/australian_variant_1-words.20                   # Unique words cumulated: 171913   - String in the file: 46
+218 / 520 #  scowl-2019.10.06/final/american-upper.80                               # Unique words cumulated: 172100   - String in the file: 191
+219 / 520 #  scowl-2019.10.06/final/british_z-abbreviations.35                      # Unique words cumulated: 172100   - String in the file: 1
+220 / 520 #  scowl-2019.10.06/final/english-words.95                                # Unique words cumulated: 351618   - String in the file: 219492
+221 / 520 #  scowl-2019.10.06/final/canadian_variant_2-words.60                     # Unique words cumulated: 351756   - String in the file: 191
+222 / 520 #  scowl-2019.10.06/final/british_variant_1-words.50                      # Unique words cumulated: 351760   - String in the file: 290
+223 / 520 #  scowl-2019.10.06/final/british-words.35                                # Unique words cumulated: 352180   - String in the file: 1094
+224 / 520 #  scowl-2019.10.06/final/australian-upper.80                             # Unique words cumulated: 352365   - String in the file: 189
+225 / 520 #  scowl-2019.10.06/final/australian-abbreviations.95                     # Unique words cumulated: 352365   - String in the file: 2
+226 / 520 #  scowl-2019.10.06/final/variant_1-upper.40                              # Unique words cumulated: 352365   - String in the file: 6
+227 / 520 #  scowl-2019.10.06/final/american-abbreviations.95                       # Unique words cumulated: 352365   - String in the file: 1
+228 / 520 #  scowl-2019.10.06/final/english-abbreviations.95                        # Unique words cumulated: 357271   - String in the file: 5113
+229 / 520 #  scowl-2019.10.06/final/english-words.50                                # Unique words cumulated: 374017   - String in the file: 23750
+230 / 520 #  scowl-2019.10.06/final/australian_variant_2-upper.60                   # Unique words cumulated: 374017   - String in the file: 53
+231 / 520 #  scowl-2019.10.06/final/british_variant_1-words.95                      # Unique words cumulated: 374017   - String in the file: 51
+232 / 520 #  scowl-2019.10.06/final/canadian-words.60                               # Unique words cumulated: 374042   - String in the file: 546
+233 / 520 #  scowl-2019.10.06/final/variant_1-words.35                              # Unique words cumulated: 374222   - String in the file: 509
+234 / 520 #  scowl-2019.10.06/final/english-abbreviations.50                        # Unique words cumulated: 374581   - String in the file: 684
+235 / 520 #  scowl-2019.10.06/final/variant_1-proper-names.95                       # Unique words cumulated: 374581   - String in the file: 16
+236 / 520 #  scowl-2019.10.06/final/canadian-abbreviations.80                       # Unique words cumulated: 374581   - String in the file: 1
+237 / 520 #  scowl-2019.10.06/final/variant_1-words.95                              # Unique words cumulated: 374621   - String in the file: 365
+238 / 520 #  scowl-2019.10.06/final/australian-words.55                             # Unique words cumulated: 374814   - String in the file: 219
+239 / 520 #  scowl-2019.10.06/final/british_variant_1-words.35                      # Unique words cumulated: 374828   - String in the file: 274
+240 / 520 #  scowl-2019.10.06/final/british-words.50                                # Unique words cumulated: 375277   - String in the file: 792
+241 / 520 #  scowl-2019.10.06/final/australian_variant_2-words.70                   # Unique words cumulated: 375277   - String in the file: 327
+242 / 520 #  scowl-2019.10.06/final/canadian-upper.70                               # Unique words cumulated: 375277   - String in the file: 68
+243 / 520 #  scowl-2019.10.06/final/english-upper.40                                # Unique words cumulated: 375404   - String in the file: 488
+244 / 520 #  scowl-2019.10.06/final/english-abbreviations.35                        # Unique words cumulated: 375442   - String in the file: 84
+245 / 520 #  scowl-2019.10.06/final/variant_1-words.50                              # Unique words cumulated: 375488   - String in the file: 393
+246 / 520 #  scowl-2019.10.06/final/australian-abbreviations.35                     # Unique words cumulated: 375488   - String in the file: 1
+247 / 520 #  scowl-2019.10.06/final/british_variant_1-upper.40                      # Unique words cumulated: 375488   - String in the file: 6
+248 / 520 #  scowl-2019.10.06/final/british-words.95                                # Unique words cumulated: 376980   - String in the file: 2953
+249 / 520 #  scowl-2019.10.06/final/variant_2-contractions.70                       # Unique words cumulated: 376980   - String in the file: 1
+250 / 520 #  scowl-2019.10.06/final/english-words.35                                # Unique words cumulated: 403854   - String in the file: 36104
+251 / 520 #  scowl-2019.10.06/final/canadian_variant_2-upper.70                     # Unique words cumulated: 403958   - String in the file: 140
+252 / 520 #  scowl-2019.10.06/final/australian_variant_2-abbreviations.80           # Unique words cumulated: 403958   - String in the file: 1
+253 / 520 #  scowl-2019.10.06/final/canadian_variant_2-words.50                     # Unique words cumulated: 404317   - String in the file: 481
+254 / 520 #  scowl-2019.10.06/final/british_variant_1-words.60                      # Unique words cumulated: 404317   - String in the file: 177
+255 / 520 #  scowl-2019.10.06/final/canadian-words.95                               # Unique words cumulated: 404318   - String in the file: 2950
+256 / 520 #  scowl-2019.10.06/final/australian_variant_2-upper.95                   # Unique words cumulated: 404318   - String in the file: 38
+257 / 520 #  scowl-2019.10.06/final/variant_1-upper.70                              # Unique words cumulated: 404318   - String in the file: 7
+258 / 520 #  scowl-2019.10.06/final/english-abbreviations.60                        # Unique words cumulated: 404772   - String in the file: 549
+259 / 520 #  scowl-2019.10.06/final/canadian_variant_2-words.95                     # Unique words cumulated: 404799   - String in the file: 174
+260 / 520 #  scowl-2019.10.06/final/english-words.60                                # Unique words cumulated: 413420   - String in the file: 13407
+261 / 520 #  scowl-2019.10.06/final/british-upper.70                                # Unique words cumulated: 413456   - String in the file: 67
+262 / 520 #  scowl-2019.10.06/final/australian_variant_2-upper.50                   # Unique words cumulated: 413456   - String in the file: 109
+263 / 520 #  scowl-2019.10.06/final/canadian-words.50                               # Unique words cumulated: 413480   - String in the file: 792
+264 / 520 #  scowl-2019.10.06/final/british_variant_2-contractions.70               # Unique words cumulated: 413480   - String in the file: 1
+265 / 520 #  scowl-2019.10.06/final/british-words.60                                # Unique words cumulated: 413775   - String in the file: 544
+266 / 520 #  scowl-2019.10.06/final/australian_variant_2-words.40                   # Unique words cumulated: 413775   - String in the file: 127
+267 / 520 #  scowl-2019.10.06/final/english-upper.70                                # Unique words cumulated: 418909   - String in the file: 6299
+268 / 520 #  scowl-2019.10.06/final/canadian_variant_2-words.35                     # Unique words cumulated: 419274   - String in the file: 459
+269 / 520 #  scowl-2019.10.06/final/british_variant_2-abbreviations.95              # Unique words cumulated: 419274   - String in the file: 2
+270 / 520 #  scowl-2019.10.06/final/variant_1-words.60                              # Unique words cumulated: 419295   - String in the file: 232
+271 / 520 #  scowl-2019.10.06/final/british_variant_1-upper.70                      # Unique words cumulated: 419295   - String in the file: 3
+272 / 520 #  scowl-2019.10.06/final/australian_variant_2-upper.35                   # Unique words cumulated: 419295   - String in the file: 1
+273 / 520 #  scowl-2019.10.06/final/canadian-words.35                               # Unique words cumulated: 419360   - String in the file: 1083
+274 / 520 #  scowl-2019.10.06/final/canadian_variant_2-upper.40                     # Unique words cumulated: 419364   - String in the file: 7
+275 / 520 #  scowl-2019.10.06/final/variant_1-upper.60                              # Unique words cumulated: 419364   - String in the file: 50
+276 / 520 #  scowl-2019.10.06/final/british_z-proper-names.95                       # Unique words cumulated: 419364   - String in the file: 520
+277 / 520 #  scowl-2019.10.06/final/australian-proper-names.80                      # Unique words cumulated: 419364   - String in the file: 268
+278 / 520 #  scowl-2019.10.06/final/australian_variant_2-words.35                   # Unique words cumulated: 419377   - String in the file: 601
+279 / 520 #  scowl-2019.10.06/final/australian-words.10                             # Unique words cumulated: 419377   - String in the file: 45
+280 / 520 #  scowl-2019.10.06/final/british_variant_1-words.70                      # Unique words cumulated: 419378   - String in the file: 35
+281 / 520 #  scowl-2019.10.06/final/canadian_variant_2-words.40                     # Unique words cumulated: 419378   - String in the file: 119
+282 / 520 #  scowl-2019.10.06/final/english-abbreviations.70                        # Unique words cumulated: 419993   - String in the file: 693
+283 / 520 #  scowl-2019.10.06/final/american-abbreviations.70                       # Unique words cumulated: 419996   - String in the file: 4
+284 / 520 #  scowl-2019.10.06/final/australian-abbreviations.70                     # Unique words cumulated: 419996   - String in the file: 6
+285 / 520 #  scowl-2019.10.06/final/canadian-words.40                               # Unique words cumulated: 419996   - String in the file: 225
+286 / 520 #  scowl-2019.10.06/final/australian_variant_2-upper.40                   # Unique words cumulated: 419996   - String in the file: 7
+287 / 520 #  scowl-2019.10.06/final/british-upper.60                                # Unique words cumulated: 419996   - String in the file: 1
+288 / 520 #  scowl-2019.10.06/final/canadian_variant_2-upper.35                     # Unique words cumulated: 419996   - String in the file: 1
+289 / 520 #  scowl-2019.10.06/final/english-words.70                                # Unique words cumulated: 452242   - String in the file: 33275
+290 / 520 #  scowl-2019.10.06/final/english-upper.60                                # Unique words cumulated: 452778   - String in the file: 740
+291 / 520 #  scowl-2019.10.06/final/canadian_variant_2-upper.95                     # Unique words cumulated: 452778   - String in the file: 38
+292 / 520 #  scowl-2019.10.06/final/canadian-upper.50                               # Unique words cumulated: 452778   - String in the file: 21
+293 / 520 #  scowl-2019.10.06/final/australian_variant_2-words.50                   # Unique words cumulated: 452783   - String in the file: 491
+294 / 520 #  scowl-2019.10.06/final/british-words.70                                # Unique words cumulated: 452783   - String in the file: 1320
+295 / 520 #  scowl-2019.10.06/final/canadian-proper-names.95                        # Unique words cumulated: 452783   - String in the file: 520
+296 / 520 #  scowl-2019.10.06/final/canadian_variant_2-upper.50                     # Unique words cumulated: 452783   - String in the file: 109
+297 / 520 #  scowl-2019.10.06/final/variant_2-contractions.50                       # Unique words cumulated: 452783   - String in the file: 9
+298 / 520 #  scowl-2019.10.06/final/australian_variant_2-words.95                   # Unique words cumulated: 452816   - String in the file: 261
+299 / 520 #  scowl-2019.10.06/final/canadian-upper.95                               # Unique words cumulated: 452816   - String in the file: 27
+300 / 520 #  scowl-2019.10.06/final/british_variant_1-upper.60                      # Unique words cumulated: 452816   - String in the file: 50
+301 / 520 #  scowl-2019.10.06/final/variant_1-words.70                              # Unique words cumulated: 452819   - String in the file: 209
+302 / 520 #  scowl-2019.10.06/final/variant_2-abbreviations.80                      # Unique words cumulated: 452819   - String in the file: 1
+303 / 520 #  scowl-2019.10.06/final/variant_1-upper.50                              # Unique words cumulated: 452819   - String in the file: 49
+304 / 520 #  scowl-2019.10.06/final/british-upper.95                                # Unique words cumulated: 452819   - String in the file: 27
+305 / 520 #  scowl-2019.10.06/final/british_variant_1-words.40                      # Unique words cumulated: 452819   - String in the file: 74
+306 / 520 #  scowl-2019.10.06/final/australian-words.20                             # Unique words cumulated: 452819   - String in the file: 196
+307 / 520 #  scowl-2019.10.06/final/canadian_variant_2-words.70                     # Unique words cumulated: 452819   - String in the file: 299
+308 / 520 #  scowl-2019.10.06/final/english-upper.35                                # Unique words cumulated: 452874   - String in the file: 220
+309 / 520 #  scowl-2019.10.06/final/variant_1-upper.95                              # Unique words cumulated: 452874   - String in the file: 12
+310 / 520 #  scowl-2019.10.06/final/english-proper-names.80                         # Unique words cumulated: 466055   - String in the file: 26425
+311 / 520 #  scowl-2019.10.06/final/canadian-words.70                               # Unique words cumulated: 466064   - String in the file: 1316
+312 / 520 #  scowl-2019.10.06/final/australian_variant_2-upper.70                   # Unique words cumulated: 466064   - String in the file: 140
+313 / 520 #  scowl-2019.10.06/final/british-upper.50                                # Unique words cumulated: 466064   - String in the file: 21
+314 / 520 #  scowl-2019.10.06/final/british_variant_1-upper.35                      # Unique words cumulated: 466064   - String in the file: 4
+315 / 520 #  scowl-2019.10.06/final/english-words.40                                # Unique words cumulated: 470481   - String in the file: 6390
+316 / 520 #  scowl-2019.10.06/final/english-abbreviations.40                        # Unique words cumulated: 470606   - String in the file: 208
+317 / 520 #  scowl-2019.10.06/final/english-upper.50                                # Unique words cumulated: 471325   - String in the file: 10343
+318 / 520 #  scowl-2019.10.06/final/canadian-upper.60                               # Unique words cumulated: 471325   - String in the file: 1
+319 / 520 #  scowl-2019.10.06/final/british_variant_1-upper.95                      # Unique words cumulated: 471325   - String in the file: 12
+320 / 520 #  scowl-2019.10.06/final/australian_variant_2-words.60                   # Unique words cumulated: 471331   - String in the file: 220
+321 / 520 #  scowl-2019.10.06/final/british-words.40                                # Unique words cumulated: 471331   - String in the file: 224
+322 / 520 #  scowl-2019.10.06/final/variant_1-upper.35                              # Unique words cumulated: 471331   - String in the file: 4
+323 / 520 #  scowl-2019.10.06/final/british_variant_2-contractions.50               # Unique words cumulated: 471331   - String in the file: 9
+324 / 520 #  scowl-2019.10.06/final/british_variant_2-abbreviations.70              # Unique words cumulated: 471331   - String in the file: 3
+325 / 520 #  scowl-2019.10.06/final/canadian-abbreviations.55                       # Unique words cumulated: 471331   - String in the file: 1
+326 / 520 #  scowl-2019.10.06/final/canadian_variant_2-upper.60                     # Unique words cumulated: 471331   - String in the file: 53
+327 / 520 #  scowl-2019.10.06/final/english-upper.95                                # Unique words cumulated: 471504   - String in the file: 2091
+328 / 520 #  scowl-2019.10.06/final/australian-words.80                             # Unique words cumulated: 471504   - String in the file: 4584
+329 / 520 #  scowl-2019.10.06/final/british_variant_1-upper.50                      # Unique words cumulated: 471504   - String in the file: 48
+330 / 520 #  scowl-2019.10.06/final/variant_1-words.40                              # Unique words cumulated: 471506   - String in the file: 116
+331 / 520 #  scowl-2019.10.06/final/english-contractions.60                         # Unique words cumulated: 471506   - String in the file: 14
+332 / 520 #  scowl-2019.10.06/final/canadian_variant_2-abbreviations.95             # Unique words cumulated: 471506   - String in the file: 2
+333 / 520 #  scowl-2019.10.06/final/american-words.80                               # Unique words cumulated: 472370   - String in the file: 4578
+334 / 520 #  scowl-2019.10.06/final/british_z-upper.60                              # Unique words cumulated: 472370   - String in the file: 1
+335 / 520 #  scowl-2019.10.06/final/canadian_variant_1-words.20                     # Unique words cumulated: 472372   - String in the file: 85
+336 / 520 #  scowl-2019.10.06/final/british_variant_2-words.10                      # Unique words cumulated: 472372   - String in the file: 6
+337 / 520 #  scowl-2019.10.06/final/australian_variant_1-words.55                   # Unique words cumulated: 472372   - String in the file: 91
+338 / 520 #  scowl-2019.10.06/final/canadian_variant_1-words.80                     # Unique words cumulated: 472374   - String in the file: 224
+339 / 520 #  scowl-2019.10.06/final/variant_3-words.10                              # Unique words cumulated: 472379   - String in the file: 10
+340 / 520 #  scowl-2019.10.06/final/variant_2-words.10                              # Unique words cumulated: 472383   - String in the file: 25
+341 / 520 #  scowl-2019.10.06/final/variant_1-abbreviations.55                      # Unique words cumulated: 472383   - String in the file: 1
+342 / 520 #  scowl-2019.10.06/final/british_z-words.70                              # Unique words cumulated: 472383   - String in the file: 1317
+343 / 520 #  scowl-2019.10.06/final/australian_variant_2-contractions.50            # Unique words cumulated: 472383   - String in the file: 9
+344 / 520 #  scowl-2019.10.06/final/australian_variant_1-upper.80                   # Unique words cumulated: 472383   - String in the file: 17
+345 / 520 #  scowl-2019.10.06/final/american-words.20                               # Unique words cumulated: 472400   - String in the file: 173
+346 / 520 #  scowl-2019.10.06/final/variant_3-abbreviations.95                      # Unique words cumulated: 472402   - String in the file: 3
+347 / 520 #  scowl-2019.10.06/final/australian-contractions.35                      # Unique words cumulated: 472402   - String in the file: 1
+348 / 520 #  scowl-2019.10.06/final/british_z-upper.95                              # Unique words cumulated: 472402   - String in the file: 27
+349 / 520 #  scowl-2019.10.06/final/british-abbreviations.35                        # Unique words cumulated: 472402   - String in the file: 1
+350 / 520 #  scowl-2019.10.06/final/english-contractions.50                         # Unique words cumulated: 472402   - String in the file: 8
+351 / 520 #  scowl-2019.10.06/final/british_z-upper.50                              # Unique words cumulated: 472402   - String in the file: 21
+352 / 520 #  scowl-2019.10.06/final/variant_2-words.80                              # Unique words cumulated: 472415   - String in the file: 806
+353 / 520 #  scowl-2019.10.06/final/variant_3-words.80                              # Unique words cumulated: 472461   - String in the file: 108
+354 / 520 #  scowl-2019.10.06/final/canadian_variant_1-words.10                     # Unique words cumulated: 472462   - String in the file: 20
+355 / 520 #  scowl-2019.10.06/final/british_variant_2-words.20                      # Unique words cumulated: 472464   - String in the file: 27
+356 / 520 #  scowl-2019.10.06/final/english-contractions.95                         # Unique words cumulated: 472464   - String in the file: 89
+357 / 520 #  scowl-2019.10.06/final/british_z-abbreviations.70                      # Unique words cumulated: 472464   - String in the file: 6
+358 / 520 #  scowl-2019.10.06/final/english-contractions.35                         # Unique words cumulated: 472464   - String in the file: 5
+359 / 520 #  scowl-2019.10.06/final/british_variant_2-words.80                      # Unique words cumulated: 472464   - String in the file: 627
+360 / 520 #  scowl-2019.10.06/final/variant_3-words.20                              # Unique words cumulated: 472470   - String in the file: 23
+361 / 520 #  scowl-2019.10.06/final/variant_2-words.20                              # Unique words cumulated: 472488   - String in the file: 99
+362 / 520 #  scowl-2019.10.06/final/british_z-words.40                              # Unique words cumulated: 472488   - String in the file: 224
+363 / 520 #  scowl-2019.10.06/final/special-hacker.50                               # Unique words cumulated: 472646   - String in the file: 1649
+364 / 520 #  scowl-2019.10.06/final/american-words.10                               # Unique words cumulated: 472648   - String in the file: 35
+365 / 520 #  scowl-2019.10.06/final/british-abbreviations.95                        # Unique words cumulated: 472648   - String in the file: 2
+366 / 520 #  scowl-2019.10.06/final/american-words.35                               # Unique words cumulated: 472789   - String in the file: 1066
+367 / 520 #  scowl-2019.10.06/final/variant_2-upper.70                              # Unique words cumulated: 472789   - String in the file: 140
+368 / 520 #  scowl-2019.10.06/final/canadian_variant_1-words.50                     # Unique words cumulated: 472789   - String in the file: 343
+369 / 520 #  scowl-2019.10.06/final/australian_variant_1-upper.95                   # Unique words cumulated: 472789   - String in the file: 12
+370 / 520 #  scowl-2019.10.06/final/british_variant_2-words.60                      # Unique words cumulated: 472789   - String in the file: 186
+371 / 520 #  scowl-2019.10.06/final/english-contractions.10                         # Unique words cumulated: 472789   - String in the file: 13
+372 / 520 #  scowl-2019.10.06/final/canadian_variant_1-words.95                     # Unique words cumulated: 472789   - String in the file: 106
+373 / 520 #  scowl-2019.10.06/final/australian_variant_1-upper.50                   # Unique words cumulated: 472789   - String in the file: 49
+374 / 520 #  scowl-2019.10.06/final/australian_variant_1-words.40                   # Unique words cumulated: 472789   - String in the file: 99
+375 / 520 #  scowl-2019.10.06/final/canadian_variant_1-words.35                     # Unique words cumulated: 472807   - String in the file: 537
+376 / 520 #  scowl-2019.10.06/final/british_z-abbreviations.55                      # Unique words cumulated: 472807   - String in the file: 1
+377 / 520 #  scowl-2019.10.06/final/american-words.50                               # Unique words cumulated: 472877   - String in the file: 796
+378 / 520 #  scowl-2019.10.06/final/british_variant_2-upper.70                      # Unique words cumulated: 472877   - String in the file: 140
+379 / 520 #  scowl-2019.10.06/final/australian_variant_1-upper.35                   # Unique words cumulated: 472877   - String in the file: 4
+380 / 520 #  scowl-2019.10.06/final/canadian_variant_1-upper.40                     # Unique words cumulated: 472877   - String in the file: 6
+381 / 520 #  scowl-2019.10.06/final/variant_3-words.60                              # Unique words cumulated: 472887   - String in the file: 33
+382 / 520 #  scowl-2019.10.06/final/australian_variant_1-abbreviations.95           # Unique words cumulated: 472887   - String in the file: 1
+383 / 520 #  scowl-2019.10.06/final/variant_2-words.60                              # Unique words cumulated: 472891   - String in the file: 236
+384 / 520 #  scowl-2019.10.06/final/canadian_variant_2-abbreviations.80             # Unique words cumulated: 472891   - String in the file: 1
+385 / 520 #  scowl-2019.10.06/final/american-words.95                               # Unique words cumulated: 473497   - String in the file: 2946
+386 / 520 #  scowl-2019.10.06/final/british-abbreviations.80                        # Unique words cumulated: 473497   - String in the file: 1
+387 / 520 #  scowl-2019.10.06/final/variant_2-upper.40                              # Unique words cumulated: 473497   - String in the file: 7
+388 / 520 #  scowl-2019.10.06/final/canadian_variant_1-words.60                     # Unique words cumulated: 473497   - String in the file: 216
+389 / 520 #  scowl-2019.10.06/final/british_variant_2-words.50                      # Unique words cumulated: 473497   - String in the file: 481
+390 / 520 #  scowl-2019.10.06/final/british_z-words.55                              # Unique words cumulated: 473502   - String in the file: 219
+391 / 520 #  scowl-2019.10.06/final/variant_3-words.35                              # Unique words cumulated: 473535   - String in the file: 117
+392 / 520 #  scowl-2019.10.06/final/variant_2-words.35                              # Unique words cumulated: 473582   - String in the file: 910
+393 / 520 #  scowl-2019.10.06/final/british_variant_2-words.95                      # Unique words cumulated: 473582   - String in the file: 173
+394 / 520 #  scowl-2019.10.06/final/australian_variant_1-upper.60                   # Unique words cumulated: 473582   - String in the file: 50
+395 / 520 #  scowl-2019.10.06/final/american-upper.70                               # Unique words cumulated: 473602   - String in the file: 68
+396 / 520 #  scowl-2019.10.06/final/american-words.60                               # Unique words cumulated: 473655   - String in the file: 546
+397 / 520 #  scowl-2019.10.06/final/english-contractions.80                         # Unique words cumulated: 473655   - String in the file: 51
+398 / 520 #  scowl-2019.10.06/final/british_variant_2-words.35                      # Unique words cumulated: 473655   - String in the file: 436
+399 / 520 #  scowl-2019.10.06/final/australian_variant_1-words.70                   # Unique words cumulated: 473655   - String in the file: 170
+400 / 520 #  scowl-2019.10.06/final/variant_2-words.95                              # Unique words cumulated: 473655   - String in the file: 219
+401 / 520 #  scowl-2019.10.06/final/variant_3-words.95                              # Unique words cumulated: 473658   - String in the file: 67
+402 / 520 #  scowl-2019.10.06/final/british_variant_2-upper.40                      # Unique words cumulated: 473658   - String in the file: 7
+403 / 520 #  scowl-2019.10.06/final/canadian_variant_1-upper.70                     # Unique words cumulated: 473658   - String in the file: 2
+404 / 520 #  scowl-2019.10.06/final/variant_3-words.50                              # Unique words cumulated: 473701   - String in the file: 98
+405 / 520 #  scowl-2019.10.06/final/variant_2-words.50                              # Unique words cumulated: 473710   - String in the file: 616
+406 / 520 #  scowl-2019.10.06/final/british_z-upper.80                              # Unique words cumulated: 473710   - String in the file: 191
+407 / 520 #  scowl-2019.10.06/final/variant_2-abbreviations.95                      # Unique words cumulated: 473710   - String in the file: 2
+408 / 520 #  scowl-2019.10.06/final/canadian-abbreviations.70                       # Unique words cumulated: 473710   - String in the file: 6
+409 / 520 #  scowl-2019.10.06/final/australian_variant_2-proper-names.95            # Unique words cumulated: 473710   - String in the file: 2
+410 / 520 #  scowl-2019.10.06/final/australian-proper-names.35                      # Unique words cumulated: 473710   - String in the file: 15
+411 / 520 #  scowl-2019.10.06/final/australian_variant_2-words.80                   # Unique words cumulated: 473710   - String in the file: 765
+412 / 520 #  scowl-2019.10.06/final/canadian-upper.80                               # Unique words cumulated: 473710   - String in the file: 191
+413 / 520 #  scowl-2019.10.06/final/canadian-proper-names.80                        # Unique words cumulated: 473710   - String in the file: 268
+414 / 520 #  scowl-2019.10.06/final/australian-words.60                             # Unique words cumulated: 473710   - String in the file: 544
+415 / 520 #  scowl-2019.10.06/final/canadian_variant_2-upper.80                     # Unique words cumulated: 473710   - String in the file: 65
+416 / 520 #  scowl-2019.10.06/final/canadian-words.55                               # Unique words cumulated: 473710   - String in the file: 219
+417 / 520 #  scowl-2019.10.06/final/canadian_variant_1-abbreviations.55             # Unique words cumulated: 473710   - String in the file: 1
+418 / 520 #  scowl-2019.10.06/final/australian-upper.70                             # Unique words cumulated: 473710   - String in the file: 67
+419 / 520 #  scowl-2019.10.06/final/australian-proper-names.50                      # Unique words cumulated: 473710   - String in the file: 115
+420 / 520 #  scowl-2019.10.06/final/canadian_variant_2-words.55                     # Unique words cumulated: 473710   - String in the file: 106
+421 / 520 #  scowl-2019.10.06/final/english-upper.10                                # Unique words cumulated: 473710   - String in the file: 13
+422 / 520 #  scowl-2019.10.06/final/canadian_variant_2-contractions.50              # Unique words cumulated: 473710   - String in the file: 9
+423 / 520 #  scowl-2019.10.06/final/australian_variant_2-words.20                   # Unique words cumulated: 473710   - String in the file: 55
+424 / 520 #  scowl-2019.10.06/final/british_z-proper-names.80                       # Unique words cumulated: 473710   - String in the file: 268
+425 / 520 #  scowl-2019.10.06/final/australian-proper-names.95                      # Unique words cumulated: 473710   - String in the file: 520
+426 / 520 #  scowl-2019.10.06/final/english-proper-names.60                         # Unique words cumulated: 473710   - String in the file: 109
+427 / 520 #  scowl-2019.10.06/final/variant_1-words.55                              # Unique words cumulated: 473712   - String in the file: 106
+428 / 520 #  scowl-2019.10.06/final/australian-words.95                             # Unique words cumulated: 473712   - String in the file: 2950
+429 / 520 #  scowl-2019.10.06/final/english-upper.80                                # Unique words cumulated: 479870   - String in the file: 6483
+430 / 520 #  scowl-2019.10.06/final/english-proper-names.35                         # Unique words cumulated: 479872   - String in the file: 2
+431 / 520 #  scowl-2019.10.06/final/british_variant_1-upper.80                      # Unique words cumulated: 479872   - String in the file: 14
+432 / 520 #  scowl-2019.10.06/final/british-words.55                                # Unique words cumulated: 479872   - String in the file: 219
+433 / 520 #  scowl-2019.10.06/final/australian-words.50                             # Unique words cumulated: 479872   - String in the file: 798
+434 / 520 #  scowl-2019.10.06/final/english-abbreviations.55                        # Unique words cumulated: 479888   - String in the file: 27
+435 / 520 #  scowl-2019.10.06/final/australian_variant_2-abbreviations.70           # Unique words cumulated: 479888   - String in the file: 3
+436 / 520 #  scowl-2019.10.06/final/english-words.55                                # Unique words cumulated: 485269   - String in the file: 6235
+437 / 520 #  scowl-2019.10.06/final/english-proper-names.95                         # Unique words cumulated: 527086   - String in the file: 83993
+438 / 520 #  scowl-2019.10.06/final/australian-abbreviations.55                     # Unique words cumulated: 527086   - String in the file: 1
+439 / 520 #  scowl-2019.10.06/final/variant_1-upper.80                              # Unique words cumulated: 527086   - String in the file: 17
+440 / 520 #  scowl-2019.10.06/final/australian_variant_2-words.10                   # Unique words cumulated: 527086   - String in the file: 15
+441 / 520 #  scowl-2019.10.06/final/british-upper.80                                # Unique words cumulated: 527086   - String in the file: 189
+442 / 520 #  scowl-2019.10.06/final/australian-words.35                             # Unique words cumulated: 527086   - String in the file: 1485
+443 / 520 #  scowl-2019.10.06/final/british_variant_1-words.55                      # Unique words cumulated: 527086   - String in the file: 86
+444 / 520 #  scowl-2019.10.06/final/english-proper-names.50                         # Unique words cumulated: 528195   - String in the file: 7954
+445 / 520 #  scowl-2019.10.06/speller/make-aspell-custom                            # Unique words cumulated: 528196   - String in the file: 47
+446 / 520 #  scowl-2019.10.06/speller/make-aspell-dict                              # Unique words cumulated: 528201   - String in the file: 302
+447 / 520 #  scowl-2019.10.06/speller/Makefile                                      # Unique words cumulated: 528202   - String in the file: 67
+448 / 520 #  scowl-2019.10.06/speller/en.dic.supp                                   # Unique words cumulated: 528202   - String in the file: 23
+449 / 520 #  scowl-2019.10.06/speller/make-hunspell-dict                            # Unique words cumulated: 528203   - String in the file: 326
+450 / 520 #  scowl-2019.10.06/speller/add-no-suggest                                # Unique words cumulated: 528203   - String in the file: 25
+451 / 520 #  scowl-2019.10.06/speller/munch-list                                    # Unique words cumulated: 528205   - String in the file: 289
+452 / 520 #  scowl-2019.10.06/speller/README                                        # Unique words cumulated: 528206   - String in the file: 67
+453 / 520 #  scowl-2019.10.06/speller/README_en.txt.sh                              # Unique words cumulated: 528215   - String in the file: 637
+454 / 520 #  scowl-2019.10.06/speller/.gitignore                                    # Unique words cumulated: 528215   - String in the file: 41
+455 / 520 #  scowl-2019.10.06/speller/to-clean                                      # Unique words cumulated: 528215   - String in the file: 121
+456 / 520 #  scowl-2019.10.06/speller/en.aff                                        # Unique words cumulated: 528243   - String in the file: 666
+457 / 520 #  scowl-2019.10.06/speller/aspell-custom/Makefile.pre                    # Unique words cumulated: 528249   - String in the file: 182
+458 / 520 #  scowl-2019.10.06/speller/aspell-custom/en-custom.multi                 # Unique words cumulated: 528249   - String in the file: 2
+459 / 520 #  scowl-2019.10.06/speller/aspell-custom/configure                       # Unique words cumulated: 528263   - String in the file: 391
+460 / 520 #  scowl-2019.10.06/speller/aspell-custom/README.in.sh                    # Unique words cumulated: 528272   - String in the file: 482
+461 / 520 #  scowl-2019.10.06/speller/aspell-custom/Copyright                       # Unique words cumulated: 528272   - String in the file: 1876
+462 / 520 #  scowl-2019.10.06/speller/aspell/en_phonet.dat                          # Unique words cumulated: 528286   - String in the file: 1003
+463 / 520 #  scowl-2019.10.06/speller/aspell/en_affix.dat                           # Unique words cumulated: 528286   - String in the file: 929
+464 / 520 #  scowl-2019.10.06/speller/aspell/info.sh                                # Unique words cumulated: 528288   - String in the file: 208
+465 / 520 #  scowl-2019.10.06/speller/aspell/en.dat                                 # Unique words cumulated: 528290   - String in the file: 13
+466 / 520 #  scowl-2019.10.06/speller/aspell/Copyright.sh                           # Unique words cumulated: 528290   - String in the file: 72
+467 / 520 #  scowl-2019.10.06/speller/aspell/doc/extra.txt                          # Unique words cumulated: 528293   - String in the file: 359
+468 / 520 #  scowl-2019.10.06/speller/aspell/doc/ChangeLog                          # Unique words cumulated: 528295   - String in the file: 238
+469 / 520 #  scowl-2019.10.06/src/make-words-deps                                   # Unique words cumulated: 528295   - String in the file: 69
+470 / 520 #  scowl-2019.10.06/src/split-words                                       # Unique words cumulated: 528296   - String in the file: 284
+471 / 520 #  scowl-2019.10.06/src/make-contractions.lst                             # Unique words cumulated: 528296   - String in the file: 37
+472 / 520 #  scowl-2019.10.06/src/make-proper-names.lst                             # Unique words cumulated: 528296   - String in the file: 72
+473 / 520 #  scowl-2019.10.06/src/make-ukacd-squashed-accented.lst                  # Unique words cumulated: 528296   - String in the file: 14
+474 / 520 #  scowl-2019.10.06/src/add-affixes                                       # Unique words cumulated: 528298   - String in the file: 515
+475 / 520 #  scowl-2019.10.06/src/make-ukacd-deaccented.lst                         # Unique words cumulated: 528298   - String in the file: 9
+476 / 520 #  scowl-2019.10.06/src/proc-neol                                         # Unique words cumulated: 528299   - String in the file: 123
+477 / 520 #  scowl-2019.10.06/src/add-accents                                       # Unique words cumulated: 528299   - String in the file: 60
+478 / 520 #  scowl-2019.10.06/src/make-list                                         # Unique words cumulated: 528299   - String in the file: 11
+479 / 520 #  scowl-2019.10.06/src/proc-uk-freq-class                                # Unique words cumulated: 528299   - String in the file: 32
+480 / 520 #  scowl-2019.10.06/src/make-README                                       # Unique words cumulated: 528299   - String in the file: 27
+481 / 520 #  scowl-2019.10.06/src/make-words                                        # Unique words cumulated: 528299   - String in the file: 310
+482 / 520 #  scowl-2019.10.06/src/make-variant.lst                                  # Unique words cumulated: 528302   - String in the file: 801
+483 / 520 #  scowl-2019.10.06/src/make-symbolic-deps                                # Unique words cumulated: 528302   - String in the file: 16
+484 / 520 #  scowl-2019.10.06/src/make-call-list                                    # Unique words cumulated: 528302   - String in the file: 16
+485 / 520 #  scowl-2019.10.06/src/get-level                                         # Unique words cumulated: 528302   - String in the file: 69
+486 / 520 #  scowl-2019.10.06/src/Makefile                                          # Unique words cumulated: 528302   - String in the file: 11
+487 / 520 #  scowl-2019.10.06/src/make-accent-lists                                 # Unique words cumulated: 528302   - String in the file: 27
+488 / 520 #  scowl-2019.10.06/src/count                                             # Unique words cumulated: 528303   - String in the file: 168
+489 / 520 #  scowl-2019.10.06/src/list-combin                                       # Unique words cumulated: 528303   - String in the file: 20
+490 / 520 #  scowl-2019.10.06/src/find-accented.cc                                  # Unique words cumulated: 528305   - String in the file: 48
+491 / 520 #  scowl-2019.10.06/src/add-other-forms                                   # Unique words cumulated: 528306   - String in the file: 189
+492 / 520 #  scowl-2019.10.06/src/find-ss                                           # Unique words cumulated: 528307   - String in the file: 111
+493 / 520 #  scowl-2019.10.06/src/make-dist                                         # Unique words cumulated: 528308   - String in the file: 150
+494 / 520 #  scowl-2019.10.06/src/list-spellings                                    # Unique words cumulated: 528308   - String in the file: 29
+495 / 520 #  scowl-2019.10.06/src/make-known-upper.lst                              # Unique words cumulated: 528308   - String in the file: 34
+496 / 520 #  scowl-2019.10.06/src/make-ukacd-squashed.lst                           # Unique words cumulated: 528308   - String in the file: 12
+497 / 520 #  scowl-2019.10.06/src/proc-alt12dicts                                   # Unique words cumulated: 528312   - String in the file: 311
+498 / 520 #  scowl-2019.10.06/src/list-classes                                      # Unique words cumulated: 528312   - String in the file: 18
+499 / 520 #  scowl-2019.10.06/src/remove-plurals                                    # Unique words cumulated: 528312   - String in the file: 111
+500 / 520 #  scowl-2019.10.06/src/setup-env                                         # Unique words cumulated: 528312   - String in the file: 7
+501 / 520 #  scowl-2019.10.06/src/rand-sample.pl                                    # Unique words cumulated: 528312   - String in the file: 65
+502 / 520 #  scowl-2019.10.06/src/deaccent.hh                                       # Unique words cumulated: 528312   - String in the file: 269
+503 / 520 #  scowl-2019.10.06/src/proc-census                                       # Unique words cumulated: 528312   - String in the file: 102
+504 / 520 #  scowl-2019.10.06/src/make-ispell-all.lst                               # Unique words cumulated: 528312   - String in the file: 17
+505 / 520 #  scowl-2019.10.06/src/add-other-spellings                               # Unique words cumulated: 528312   - String in the file: 210
+506 / 520 #  scowl-2019.10.06/src/get-all-below                                     # Unique words cumulated: 528312   - String in the file: 22
+507 / 520 #  scowl-2019.10.06/src/make-possessive.lst                               # Unique words cumulated: 528312   - String in the file: 44
+508 / 520 #  scowl-2019.10.06/src/make-all.lst                                      # Unique words cumulated: 528312   - String in the file: 31
+509 / 520 #  scowl-2019.10.06/src/filter                                            # Unique words cumulated: 528312   - String in the file: 11
+510 / 520 #  scowl-2019.10.06/src/cmp-final                                         # Unique words cumulated: 528313   - String in the file: 194
+511 / 520 #  scowl-2019.10.06/src/rand-samples                                      # Unique words cumulated: 528314   - String in the file: 52
+512 / 520 #  scowl-2019.10.06/src/deaccent.cc                                       # Unique words cumulated: 528314   - String in the file: 25
+513 / 520 #  scowl-2019.10.06/src/make-abbreviations.lst                            # Unique words cumulated: 528314   - String in the file: 23
+514 / 520 #  scowl-2019.10.06/src/split-words-deps                                  # Unique words cumulated: 528314   - String in the file: 34
+515 / 520 #  scowl-2019.10.06/src/make-frequent.lst                                 # Unique words cumulated: 528314   - String in the file: 16
+516 / 520 #  scowl-2019.10.06/src/make-abbreviations.lst.pre                        # Unique words cumulated: 528314   - String in the file: 112
+517 / 520 #  scowl-2019.10.06/src/clean-alan-list                                   # Unique words cumulated: 528314   - String in the file: 18
+518 / 520 #  scowl-2019.10.06/src/add-possessive                                    # Unique words cumulated: 528314   - String in the file: 9
+519 / 520 #  scowl-2019.10.06/src/make-final                                        # Unique words cumulated: 528314   - String in the file: 82
+520 / 520 #  scowl-2019.10.06/src/make-upper.lst                                    # Unique words cumulated: 528314   - String in the file: 21
+
+```
